@@ -11,6 +11,21 @@ public class GameBehaviour : MonoBehaviour
 		{
 			Application.Quit();
 		}
+
+		if (Input.GetKeyDown(KeyCode.F2))
+		{
+			ScreenCapture.CaptureScreenshot("1.png", 1);
+		}
+
+		if (Input.GetKeyDown(KeyCode.F3))
+		{
+			ScreenCapture.CaptureScreenshot("2.png", 1);
+		}
+
+		if (Input.GetKeyDown(KeyCode.F4))
+		{
+			ScreenCapture.CaptureScreenshot("3.png", 1);
+		}
 	}
 
 	public void ShowPrivacy()
